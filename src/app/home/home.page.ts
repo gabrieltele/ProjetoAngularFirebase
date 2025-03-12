@@ -15,14 +15,11 @@ export class HomePage {
   pokemon:any = {
     nome: null,
     poder: null
+    
   };
 
-  constructor( 
-    public crudService: CrudService
-  ){ }
+  constructor( ){ }
 
-  enviar() {
-    this.crudService.insert(this.pokemon, 'pokemons');
-  }
+  
 
 }
